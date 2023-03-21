@@ -24,3 +24,10 @@ for (let i = 0; i < btn.length; i++) {
 closemodal.addEventListener('click', () => {
   closeModal();
 });
+
+// KeyPress Even
+document.addEventListener('keydown', function () {
+  if (!modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
