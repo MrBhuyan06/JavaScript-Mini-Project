@@ -54,4 +54,9 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').textContent = '?';
   document.querySelector('.number').style.width = '15rem';
   document.querySelector('.guess').value = '';
+  displayMessage(
+    (document.querySelector('.message').textContent = 'staring Game ...')
+  );
+  document.querySelector('.score').textContent = 20;
+  document.querySelector('.highscore').textContent = 0;
 });
